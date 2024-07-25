@@ -28,6 +28,15 @@ public class main{
 		System.out.println("Welcome to age calculator");
 		System.out.println("Work in progress will meet soon");
 	}
+	public static void list(){
+		System.out.println("here are some colleges");
+		System.out.println("1.Thakur college of science and commerce");
+		System.out.println("2.st.francis");
+		System.out.println("3.vartak college");
+		System.out.println("4.nallasopara college");
+		
+
+	} 
 	public static void main(String args[]){
 		greet();
 		int a = option();
@@ -35,7 +44,11 @@ public class main{
 			calculator();
 		}else if(a == 2){
 			agecalculator();
-		}else{
+		}
+		else if(a ==3){
+			list();
+		}
+		else{
 			System.out.println("Enter a valid option ");
 		}
 	}

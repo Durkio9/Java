@@ -16,14 +16,22 @@ public class main{
 		return user_option;
 	}	
 	public static void calculator(){
+		System.out.println("1.Addition");
+		System.out.println("2.Subtraction");
+		System.out.println("3.Division");
+		System.out.println("4.Multiplication");
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Welcome to maths calculator");
-		System.out.print("Enter the first number :: ");
-		int num1 = sc.nextInt();
-		System.out.print("Enter the second number :: ");
-		int num2 = sc.nextInt();
-		System.out.println("The sum of two number is :: "+(num1+num2));
+		System.out.print("Select a option ::");
+		int user = sc.nextInt();
+		if (user == 1){
+			System.out.print("Enter first number :: ");
+			int num1 = sc.nextInt();
+			System.out.print("Enter second number :: ");
+			int num2 = sc.nextInt();
+			System.out.println("The sum of two numbers = "+(num1+num2));
+		}
 	}
+
 	public static void agecalculator(){
 		System.out.println("Welcome to age calculator");
 		System.out.println("Work in progress will meet soon");
